@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <div>wasm-pack!!!!</div>
+    <script type="module">
+      import init, { lowercase, uppercase, titlecase, snake, camel, kebab, constant } from './pkg/change_case.js';
+
+      async function run() {
+        await init();
+        let str0 = '---MY_NAME_IS---_WASM_PACK___'
+        let str1 = 'my-name-is-wasm-pack';
+        let str2 = 'my_name_is_wasm_pack';
+        let str3 = 'myNameIsWasmPack';
+        let str4 = 'MY_NAME_IS_WASM_PACK';
+        console.log('str0-kebab:', kebab(str0));
+
+        // console.log('str1-kebab:', kebab(str1))
+        // console.log('str2-kebab:', kebab(str2))
+        // console.log('str3-kebab:', kebab(str3))
+        // console.log('str4-kebab:', kebab(str4))
+
+        // console.log('str1-snake:', snake(str1))
+        // console.log('str2-snake:', snake(str2))
+        // console.log('str3-snake:', snake(str3))
+        // console.log('str4-snake:', snake(str4))
+
+        // console.log('str1-camel:', camel(str1))
+        // console.log('str2-camel:', camel(str2))
+        // console.log('str3-camel:', camel(str3))
+        // console.log('str4-camel:', camel(str4))
+
+        // console.log('str1-constant:', constant(str1))
+        // console.log('str2-constant:', constant(str2))
+        // console.log('str3-constant:', constant(str3))
+        // console.log('str4-constant:', constant(str4))
+        
+      }
+      run();
+    </script>
+  </body>
+</html>
