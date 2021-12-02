@@ -9,19 +9,19 @@ extern "C" {
 
 /// 小写
 #[wasm_bindgen]
-pub fn lowercase(s: &str) -> String {
+pub fn lower(s: &str) -> String {
   s.to_lowercase()
 }
 
 /// 大写
 #[wasm_bindgen]
-pub fn uppercase(s: &str) -> String {
+pub fn upper(s: &str) -> String {
   s.to_uppercase()
 }
 
 /// 首字母大写
 #[wasm_bindgen]
-pub fn titlecase(s:&str) -> String {
+pub fn title(s:&str) -> String {
   s[..1].to_uppercase() + &s[1..]
 }
 

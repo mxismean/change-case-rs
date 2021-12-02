@@ -4,7 +4,7 @@
   "icon": "icon.png",
   "description": "Change the veriable name style! Rust!!!",
   "version": "0.0.1",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/mxismean/change-case-rs.git"
   },
@@ -20,29 +20,28 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:case.lowercase",
-    "onCommand:case.uppercase",
-    "onCommand:case.titlecase",
+    "onCommand:case.lower",
+    "onCommand:case.upper",
+    "onCommand:case.title",
     "onCommand:case.kebab",
     "onCommand:case.snake",
     "onCommand:case.camel",
     "onCommand:case.constant"
-
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "case.lowercase",
-        "title": "case lowercase"
+        "command": "case.lower",
+        "title": "case lower"
       },
       {
-        "command": "case.uppercase",
-        "title": "case uppercase"
+        "command": "case.upper",
+        "title": "case upper"
       },
       {
-        "command": "case.titlecase",
-        "title": "case titlecase"
+        "command": "case.title",
+        "title": "case title"
       },
       {
         "command": "case.kebab",

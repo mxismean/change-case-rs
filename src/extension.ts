@@ -4,9 +4,9 @@ import { EOL } from 'os';
 import * as wasm from '../rust/change_case/pkg/change_case';
 
 const CMD_FN = {
-  lowercase: wasm.lowercase,
-  uppercase: wasm.uppercase,
-  titlecase: wasm.titlecase,
+  lower: wasm.lower,
+  upper: wasm.upper,
+  title: wasm.title,
   snake: wasm.snake,
   camel: wasm.camel,
   kebab: wasm.kebab,
@@ -14,9 +14,9 @@ const CMD_FN = {
 };
 
 export function activate(context: vscode.ExtensionContext) {
-	vscode.commands.registerCommand('case.lowercase', () => changeCase('lowercase'));
-	vscode.commands.registerCommand('case.uppercase', () => changeCase('uppercase'));
-	vscode.commands.registerCommand('case.titlecase', () => changeCase('titlecase'));
+	vscode.commands.registerCommand('case.lower', () => changeCase('lower'));
+	vscode.commands.registerCommand('case.upper', () => changeCase('upper'));
+	vscode.commands.registerCommand('case.title', () => changeCase('title'));
 	vscode.commands.registerCommand('case.snake', () => changeCase('snake'));
 	vscode.commands.registerCommand('case.camel', () => changeCase('camel'));
 	vscode.commands.registerCommand('case.kebab', () => changeCase('kebab'));
