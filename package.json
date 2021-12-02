@@ -4,6 +4,15 @@
   "icon": "icon.png",
   "description": "Change the veriable name style! Rust!!!",
   "version": "0.0.1",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/mxismean/change-case-rs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mxismean/change-case-rs/issues"
+  },
+  "license": "MIT",
+  "publisher": "mxismean",
   "engines": {
     "vscode": "^1.62.0"
   },
